@@ -1,0 +1,35 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  flex-flow: row wrap;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  z-index: 1;
+  position: fixed;
+  top: 0%;
+  }
+  
+  .newTweet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 1em;
+  }
+
+  #titleLogo {
+    font-family: "Bungee", cursive;
+    font-size: 2em;
+   
+  }
+
+  .icon {
+    color: #EA3D22;
+    align-self: center;
+  }
