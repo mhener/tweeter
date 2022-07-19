@@ -1,0 +1,45 @@
+.humming {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  color: #545149;
+  font-weight: bolder;
+  border-bottom-style: solid;
+  border-bottom-color: #545149;
+  margin: 50px;;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.tweetForm {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: 100%;
+}
+
+.tweetButton {
+display: flex;
+justify-content: space-between;
+font-size: 1em;
+font-family: "Bungee", cursive;
+color: white;
+background-color: #4056A1;
+margin: 20px;
+}
+
+.output {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter {
+  font-size: 1em;
+  font-family: "Bungee", cursive;
+  color: #545149;
+  font-weight: bolder;
+  margin: 20px;
+}
