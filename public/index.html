@@ -10,17 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c3f4028e55.js" crossorigin="anonymous"></script>
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css">
     <link rel="stylesheet" href="/styles/header.css" type="text/css">
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css">
+    <link rel="stylesheet" href="/styles/tweeter-feed.css" type="text/css">
+
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- App JS -->
+    <script src="https://kit.fontawesome.com/c3f4028e55.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </head>
   <body>
     <!-- Top nav bar (fixed) -->
@@ -28,7 +34,7 @@
       <span id="titleLogo">tweeter</span>
       <div class="newTweet"><span><strong>Write</strong> a new tweet</span><i class=" icon fa-solid fa-angles-down"></i> </div>
     </nav>
-    <header>
+    <header id="header">
       <div>
           <img class="profilePicture" src="/images/profile-hex.png"> 
       </div>
@@ -49,6 +55,56 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+      <section class ="tweeter-feed">
+        <article class="tweet">
+          <header> 
+            <div class="account-name">Mardin Hener</div> 
+            <div class="user-name">@mhener</div>
+          </header>
+          <p>I'm learning how to create my own little tweeter app!</p>
+          <footer>
+            <div class="tweet-date">10 days ago</div>
+            <div class="icons">  
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i> 
+              <i class="fa-solid fa-heart"></i> 
+            </div>
+          </footer>
+        </article>
+
+        <article class="tweet">
+          <header> 
+            <div class="account-name">Harry Styles</div> 
+            <div class="user-name">@harrystyles</div>
+          </header>
+          <p>Are you ready for a new album?🎤</p>
+          <footer>
+            <div class="tweet-date">12 days ago</div>
+            <div class="icons">  
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i> 
+              <i class="fa-solid fa-heart"></i> 
+            </div>
+          </footer>
+        </article>
+
+        <article class="tweet">
+          <header> 
+            <div class="account-name">Maryam Razooqi</div> 
+            <div class="user-name">@maryam</div>
+          </header>
+          <p>Can't wait to be back to Spain 🇲🇪</p>
+          <footer>
+            <div class="tweet-date">14 days ago</div>
+            <div class="icons">
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i> 
+              <i class="fa-solid fa-heart"></i> 
+            </div>
+
+          </footer>
+        </article>
       </section>
     </main>
   </body>
