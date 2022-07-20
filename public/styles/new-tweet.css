@@ -3,8 +3,6 @@
   font-size: 1em;
   color: #545149;
   font-weight: bolder;
-  border-bottom-style: solid;
-  border-bottom-color: #545149;
   margin: 50px;;
   align-items: center;
   align-self: center;
@@ -42,4 +40,16 @@ margin: 20px;
   color: #545149;
   font-weight: bolder;
   margin: 20px;
+}
+
+#tweet-text {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-style: solid; 
+  border-bottom-width: thick;
+  border-bottom-color: black;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  background-color: #f4f1ec;
 }
