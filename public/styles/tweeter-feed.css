@@ -1,7 +1,7 @@
 .tweeter-feed {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 50px;
 
 }
 
@@ -37,6 +37,7 @@ article.tweet > p {
   border-right: none;
   padding: 0.7em;
   margin: 10px 0px;
+  overflow: hidden;
 }
 
 article.tweet > footer > div {
@@ -74,3 +75,4 @@ article.tweet > footer > div.icons {
 .fa-heart:hover {
   color: goldenrod;
 }
+

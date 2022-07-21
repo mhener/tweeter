@@ -12,6 +12,7 @@ nav {
   z-index: 1;
   position: fixed;
   top: 0%;
+  overflow: hidden;
   }
   
   .newTweet {
@@ -33,3 +34,11 @@ nav {
     color: #EA3D22;
     align-self: center;
   }
+
+  .avatars {
+    align-content: center;
+    align-self: center;
+    
+  }
+
+ 

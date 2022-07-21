@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>Tweeter - Home Page</title>
+    
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -26,6 +28,7 @@
     <script src="https://kit.fontawesome.com/c3f4028e55.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   </head>
   <body>
@@ -40,16 +43,26 @@
       </div>
       <br>
       <div>
-          <h2 class="profileName">Your Name</h2>
+          <h2 class="profileName">Mardin Hener</h2>
       </div>
   </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2 class="ComposeTweet"></h2>
+        <h2 class="ComposeTweet"> Compose Tweet</h2>
+        <span id="error-message-empty" class="error-message-box">
+          <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+          Please enter text before submitting a new Tweet!
+          <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+        </span>
+        <span id="error-message-tooLong" class="error-message-box">
+          <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+          Tweet exceeds 140 characters!
+          <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+        </span>
         <form method="POST" action="/tweets" class="tweetForm">
-          <label for="tweet-text" class ="humming">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
+          <label for="tweet-text"></label>
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?" class="humming"></textarea>
           <div class="output">
             <button type="submit" class="tweetButton">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
@@ -57,54 +70,6 @@
         </form>
       </section>
       <section class ="tweeter-feed">
-        <article class="tweet">
-          <header> 
-            <div class="account-name">Mardin Hener</div> 
-            <div class="user-name">@mhener</div>
-          </header>
-          <p>I'm learning how to create my own little tweeter app!</p>
-          <footer>
-            <div class="tweet-date">10 days ago</div>
-            <div class="icons">  
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i> 
-              <i class="fa-solid fa-heart"></i> 
-            </div>
-          </footer>
-        </article>
-
-        <article class="tweet">
-          <header> 
-            <div class="account-name">Harry Styles</div> 
-            <div class="user-name">@harrystyles</div>
-          </header>
-          <p>Are you ready for a new album?🎤</p>
-          <footer>
-            <div class="tweet-date">12 days ago</div>
-            <div class="icons">  
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i> 
-              <i class="fa-solid fa-heart"></i> 
-            </div>
-          </footer>
-        </article>
-
-        <article class="tweet">
-          <header> 
-            <div class="account-name">Maryam Razooqi</div> 
-            <div class="user-name">@maryam</div>
-          </header>
-          <p>Can't wait to be back to Spain 🇲🇪</p>
-          <footer>
-            <div class="tweet-date">14 days ago</div>
-            <div class="icons">
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i> 
-              <i class="fa-solid fa-heart"></i> 
-            </div>
-
-          </footer>
-        </article>
       </section>
     </main>
   </body>

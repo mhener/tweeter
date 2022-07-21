@@ -28,3 +28,23 @@ header#header {
   align-self: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  header#header {
+    margin-top: 175px;
+    margin-left: 50px;
+    margin-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .profilePicture  {
+    max-width: 175px;
+    max-height: 175px;
+  }
+  
+  .profileName {
+    font-size: 1.5rem;
+  }
+  }
+  
+ 

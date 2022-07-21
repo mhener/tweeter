@@ -11,6 +11,20 @@
   display: flex;
   width: 100%;
 }
+.ComposeTweet {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4em;
+  color: #545149;
+  font-weight: bolder;
+  margin: 50px;;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+
+}
 
 .tweetForm {
   display: flex;
@@ -52,4 +66,27 @@ margin: 20px;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
   background-color: #f4f1ec;
+  justify-content: center;
+  overflow: scroll;
 }
+
+.error-message-box {
+  display: flex;
+  border: 3px solid red;
+  color: red;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: -10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fa-exclamation-triangle {
+margin-left: 5px;
+margin-right: 5px;
+}
+
