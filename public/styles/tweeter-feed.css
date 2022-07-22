@@ -13,6 +13,7 @@ article.tweet {
   margin: 10px 0px;
   -webkit-box-shadow: 12px 10px 0px 0px rgba(0,0,0,0.17); 
   box-shadow: 12px 10px 0px 0px rgba(0,0,0,0.17);
+  width: 100%;
 }
 
 article.tweet > header {
@@ -38,6 +39,7 @@ article.tweet > p {
   padding: 0.7em;
   margin: 10px 0px;
   overflow: hidden;
+  
 }
 
 article.tweet > footer > div {
@@ -76,3 +78,8 @@ article.tweet > footer > div.icons {
   color: goldenrod;
 }
 
+@media screen and (min-width: 700px) {
+  .tweeter-feed{
+    width: 100%;
+  }
+ }

@@ -35,7 +35,7 @@ main {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- @media screen and (min-width: 1024px) {
+ @media screen and (min-width: 700px) {
   body {
     display: flex;
     flex-direction: row;
