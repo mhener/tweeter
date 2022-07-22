@@ -12,6 +12,7 @@ header#header {
   margin-inline-end: 0%;
   background-color: #ffa200;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  padding: 10px;
 }
 
 .profilePicture {
@@ -20,6 +21,10 @@ header#header {
   align-items: center;
   align-content: center;
   align-self: center;
+  max-width: 150px;
+  max-height: 150px;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
 }
 
 .profileName {
@@ -33,7 +38,6 @@ header#header {
   header#header {
     width: 240%;
     margin-top: 240px;
-    
   }
 }
 
@@ -41,6 +45,8 @@ header#header {
   header#header {
     width: 100%;
     position: relative;
-
+  }
+  .profileName {
+    font-size: smaller;
   }
 }

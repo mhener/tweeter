@@ -28,6 +28,13 @@ nav {
   #titleLogo {
     font-family: "Bungee", cursive;
     font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
    
   }
 

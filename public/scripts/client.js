@@ -1,8 +1,9 @@
-$(document).ready(function() {
-  //Hiding error messages until implemented:
+$(document).ready(function() { // Allowing our HTML load before implementing JS
 
+  // Hiding error messages until implemented:
   $("#error-message-empty").hide();
   $("#error-message-tooLong").hide();
+  
   // This is the function that will prevent XSS (Cross Site Scripting):
   const escape = function(str) {
     let div = document.createElement("div");
