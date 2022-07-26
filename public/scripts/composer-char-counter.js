@@ -1,14 +1,15 @@
 // Implementing character count, once character count is reached, the character count turns red and a -ve value is shown:
 
 $(document).ready(function() {
-  const maxLength = 140;
   const textBox = $('#tweet-text');
-  const counter = $('.counter');
+  textBox.keyup(function() {
+    const maxLength = 140;
+    const counter = $('.counter');
 
-  counter.text(maxLength);
+    counter.text(maxLength);
 
-  textBox.keydown(function() {
     const characters = $(this).val().length;
+    console.log(characters);
     counter.text(maxLength - characters);
 
     if (maxLength < characters) {

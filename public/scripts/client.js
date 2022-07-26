@@ -59,21 +59,28 @@ $(document).ready(function() { // Allowing our HTML load before implementing JS
   $(`.tweetForm`).on('submit', function(event) {
     event.preventDefault();
     
-    const data = $(this).serialize();
     
+    const data = $("#tweet-text").val();
+    console.log('this is the data', data);
     if (data === null || data === "") {
-      $("#error-message-empty").slideDown("slow");
+      $("#error-message-empty").slideDown(500, function() {
+        $("#error-message-empty").delay(3000).slideUp(500);
+      });
       $("#error-message-tooLong").hide();
     } else if (data.length > 140) {
-      $("#error-message-tooLong").slideDown("slow");
+      $("#error-message-tooLong").slideDown(500, function() {
+        $("#error-message-tooLong").delay(3000).slideUp(500);
+      });
       $("#error-message-empty").hide();
     } else {
       $.ajax({
         method: 'POST',
-        data: data,
+        data: $("#tweet-text").serialize(),
         url: "/tweets"
       })
         .then(() => {
+          $("#tweet-text").val('');
+          $('.counter').val(140);
           $.ajax('/tweets', { method: 'GET' })
             .then((tweets) => {
               renderTweets(tweets);
