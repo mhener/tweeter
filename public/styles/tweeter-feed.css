@@ -11,9 +11,12 @@ article.tweet {
   border: 4px solid black;
   padding: 0.7em;
   margin: 10px 0px;
+  width: 100%;
+}
+
+article.tweet:hover{
   -webkit-box-shadow: 12px 10px 0px 0px rgba(0,0,0,0.17); 
   box-shadow: 12px 10px 0px 0px rgba(0,0,0,0.17);
-  width: 100%;
 }
 
 article.tweet > header {
@@ -38,7 +41,7 @@ article.tweet > p {
   border-right: none;
   padding: 0.7em;
   margin: 10px 0px;
-  overflow: hidden;
+  overflow-wrap: break-word;
   
 }
 

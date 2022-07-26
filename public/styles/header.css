@@ -2,12 +2,11 @@ header#header {
   display: flex;
   flex-direction: column;
   height: 400px;
-  width: 100%;
-  display: flex;
+  width:100%;
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 120px;
+  margin-top: 100px;
   margin-inline-start: 0;
   margin-inline-end: 0%;
   background-color: #ffa200;
@@ -21,10 +20,8 @@ header#header {
   align-items: center;
   align-content: center;
   align-self: center;
-  max-width: 150px;
+  width: fit-content;
   max-height: 150px;
-  margin-inline-start: 10px;
-  margin-inline-end: 10px;
 }
 
 .profileName {
