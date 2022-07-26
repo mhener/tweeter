@@ -16,3 +16,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Final Product:
+!["Desktop View"](https://github.com/mhener/tweeter/blob/master/public/images/Desktop-View.png)
+!["Mobile View #1"](https://github.com/mhener/tweeter/blob/master/public/images/Mobile-View1.png)
+
